@@ -4,6 +4,7 @@ import { SleepCalculator } from "@/components/sleep-calculator"
 import { SleepResults } from "@/components/sleep-results"
 import { MoonIcon } from "lucide-react"
 import { calculateSleepTimes, calculateWakeUpTimes } from "@/lib/sleep-utils"
+import { Footer } from "./components/footer"
 
 export default function App() {
   const [selectedTab, setSelectedTab] = useState("sleep-now")
@@ -23,7 +24,7 @@ export default function App() {
 
   return (
     <main
-      className="min-h-screen p-4 md:p-6 font-sans">
+      className="min-h-screen p-4 md:p-6 font-sans flex flex-col items-center justify-between">
       <div className="max-w-md mx-auto">
         <motion.div
           className="text-center mb-6"
@@ -62,6 +63,8 @@ export default function App() {
           )}
         </AnimatePresence>
       </div>
+
+      <Footer />
     </main>
   )
 }
