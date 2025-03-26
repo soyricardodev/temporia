@@ -1,6 +1,15 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@font-face {
+  font-family: 'Outfit Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(@fontsource-variable/outfit/files/outfit-latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 :root {
   --background: oklch(0.16 0.04 281.83);
   --foreground: oklch(0.95 0.01 260.73);
@@ -35,7 +44,7 @@
   --sidebar-border: oklch(0.33 0.08 280.79);
   --sidebar-ring: oklch(0.67 0.29 341.41);
 
-  --font-sans: Outfit, sans-serif;
+  --font-sans: 'Outfit Variable', sans-serif;
 
   --radius: 0.5rem;
 }
