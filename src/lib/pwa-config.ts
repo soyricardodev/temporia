@@ -2,8 +2,8 @@ import { type VitePWAOptions } from 'vite-plugin-pwa';
 
 export const PWAConfig: Partial<VitePWAOptions> = {
   includeAssets: [
-    'favicon.svg',
     'favicon.ico',
+    'favicon.png',
     'robots.txt',
     'apple-touch-icon.png',
   ],
