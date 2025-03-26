@@ -8,10 +8,10 @@ export const PWAConfig: Partial<VitePWAOptions> = {
     'apple-touch-icon.png',
   ],
   manifest: {
-    name: 'React Query Zustand Boilerplate',
-    short_name: 'boilerplate',
-    description: 'Boilerplate with React, Zustand, and Vite',
-    theme_color: '#ffffff',
+    name: 'Calculadora Ciclos de Sueño - Temporia',
+    short_name: 'Temporia',
+    description: 'La mejor Calculadora para saber cuales son las mejores para acostarse y levantarse, sin anuncios, rápida y sin acceso a internet.',
+    theme_color: '#0b0a1e',
     start_url: '/',
     scope: '/',
     icons: [
