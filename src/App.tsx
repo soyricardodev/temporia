@@ -22,12 +22,8 @@ export default function App() {
   }
 
   return (
-    <motion.main
-      className="min-h-screen p-4 md:p-6"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.4 }}
-    >
+    <main
+      className="min-h-screen p-4 md:p-6 font-sans">
       <div className="max-w-md mx-auto">
         <motion.div
           className="text-center mb-6"
@@ -66,7 +62,7 @@ export default function App() {
           )}
         </AnimatePresence>
       </div>
-    </motion.main>
+    </main>
   )
 }
 
