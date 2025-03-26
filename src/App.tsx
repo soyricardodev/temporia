@@ -6,6 +6,8 @@ import { MoonIcon } from "lucide-react"
 import { calculateSleepTimes, calculateWakeUpTimes } from "@/lib/sleep-utils"
 import { Footer } from "./components/footer"
 
+import { Analytics } from "@vercel/analytics/react"
+
 export default function App() {
   const [selectedTab, setSelectedTab] = useState("sleep-now")
   const [wakeUpTime, setWakeUpTime] = useState<Date | null>(null)
@@ -25,6 +27,7 @@ export default function App() {
   return (
     <main
       className="min-h-screen p-4 md:p-6 font-sans flex flex-col items-center justify-between">
+      <Analytics />
       <div className="max-w-md mx-auto">
         <motion.div
           className="text-center mb-6"
